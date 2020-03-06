@@ -1,5 +1,5 @@
 name: "Fork Bacon"
-description: "Keeps forks updated automatically with their upstream couterparts"
+description: "Keeps forks updated automatically with their upstream counter part"
 branding:
   icon: "bolt"
   color: "blue"
