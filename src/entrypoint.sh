@@ -52,8 +52,8 @@ modifications as it might lead to lot of conflicts.
 [--no-push]             [Skip Git Push]
 [-h --help]             [Display this help message]
 
-Version: ${GITHUB_REF:-UNKNOWN}
-SHA    : ${GITHUB_SHA:-NA}
+VERSION       : ${VERSION:-UNKNOWN}
+GIT_COMMIT    : ${GIT_COMMIT:-UNKNOWN}
 
 This is best used as github action.
 For info on how to do it see https://github.com/shitiomatic/forkbacon

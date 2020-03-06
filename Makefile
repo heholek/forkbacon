@@ -1,19 +1,21 @@
-# Set Shell
-SHELL := /bin/bash
-NAME := forkbacon
+# Set Help, default goal and WATCHTOWER_BASE
+include help.mk
+
+# Name of the project and docker image
+NAME  := forkbacon
 
 # OCI Metadata
-IMAGE_TITLE := "Keep Forks in Sync"
-IMAGE_DESC := "GitHub Action to keep minimally modified forks in sync"
-IMAGE_URL := "https://hub.docker.com/r/shitiomatic/forkbacon"
-IMAGE_SOURCE := "https://github.com/shitiomatic/forkbacon"
-IMAGE_LICENSES := "MIT"
-IMAGE_DOCUMENTATION_URL := "https://github.com/shitiomatic/forkbacon"
+IMAGE_TITLE             := Keep Forks in Sync
+IMAGE_DESC              := GitHub Action to keep minimally modified forks in sync
+IMAGE_URL               := https://hub.docker.com/r/shitiomatic/forkbacon
+IMAGE_SOURCE            := https://github.com/shitiomatic/forkbacon
+IMAGE_LICENSES          := MIT
+IMAGE_DOCUMENTATION     := https://github.com/shitiomatic/forkbacon
 
-include base.mk
+# Relative to
+DOCKER_CONTEXT_DIR := $(WATCHTOWER_BASE)/src
 
-# Because we need ROOT_DIR
-DOCKER_CONTEXT_DIR := $(ROOT_DIR)/src
+include docker.mk
 
 .PHONY: shellcheck
 shellcheck: ## Runs the shellcheck.
