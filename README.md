@@ -1,6 +1,7 @@
 # Fork Bacon
 
 [![build](https://github.com/shitiomatic/forkbacon/workflows/build/badge.svg?branch=master)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Abuild)
+[![lables](https://github.com/shitiomatic/forkbacon/workflows/lables/badge.svg)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Alabels)
 
 Keeps your repository minimally modified forks in sync.
 
@@ -21,12 +22,13 @@ jobs:
         branch: "master"   # Local Branch
         method: "rebase"   # Method to use. Can be `merge`, `merge-ff-only` or `rebase`.
         args: "--no-push"  # Additional Arguments to pass to the container
-...
 ```
 
 ## Help
 
 ```console
+Usage: docker run -it shitiomatic/forkbacon:latest   [options]
+
 Keeps minimally modified forks in sync.
 Please do not use this for forks with extensive
 modifications as it might lead to lot of conflicts.
@@ -38,7 +40,8 @@ modifications as it might lead to lot of conflicts.
 [--no-push]             [Skip Git Push]
 [-h --help]             [Display this help message]
 
-Version: 0.1.4
+Version: master
+SHA    : 81ef4e67b8beef4ff1ef285c3e5f80b803b3bcb3
 
 This is best used as github action.
 For info on how to do it see https://github.com/shitiomatic/forkbacon
