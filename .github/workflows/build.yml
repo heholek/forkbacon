@@ -77,20 +77,20 @@ jobs:
       - name: Docker Cross Build and Push
         run: make docker
         env:
-          PUSH: 0
-          BUILDX: 1
+          BUILDX_PUSH: 1
+          BUILDX_ENABLE: 1
         if: github.event_name == 'push'
 
       # No Push
       - name: Docker Build [Skip Push]
         run: make docker
         env:
-          PUSH: 0
-          BUILDX: 1
+          BUILDX_PUSH: 0
+          BUILDX_ENABLE: 1
         if: github.event_name == 'pull_request'
 
       - name: Docker Cleanup
         run: |
           docker logout || true
           rm -f ${HOME}/.docker/config.json
-          if: github.event_name	== 'push'
+        if: github.event_name	== 'push'
