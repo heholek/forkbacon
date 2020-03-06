@@ -1,7 +1,7 @@
 # ForkBacon
 
 [![build](https://github.com/shitiomatic/forkbacon/workflows/build/badge.svg?branch=master)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Abuild)
-[![lables](https://github.com/shitiomatic/forkbacon/workflows/lables/badge.svg)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Alabels)
+[![lables](https://github.com/shitiomatic/forkbacon/workflows/labels/badge.svg)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Alabels)
 
 Keeps your repository minimally modified forks in sync.
 
