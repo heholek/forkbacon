@@ -9,7 +9,10 @@ name: fork
 jobs:
   fork:
     - name: fork-bacon
-      uses: shitiomatic/forkbacon@0.1.1
+    - uses: actions/checkout@v2
+    - run: |
+        git fetch --prune --unshallow
+    - uses: shitiomatic/forkbacon@0.1.1
       with:
         upstream_url: "URL for upstream repo. This must be HTTP" # Required! Upstream https clone URL
         upstream_branch: "master"   # Upstream Branch to use
