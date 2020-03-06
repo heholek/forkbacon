@@ -1,7 +1,7 @@
 name: "Fork Bacon"
-description: "Keeps forks updated automatically."
+description: "Keeps forks updated automatically with their upstream couterparts"
 branding:
-  icon: "tag"
+  icon: "bolt"
   color: "blue"
 inputs:
   upstream_url:
@@ -28,8 +28,9 @@ inputs:
     default: ""
     required: false
   key:
-    required: true
-    description: Deploy Key with write permiss
+    required: false
+    description: SSH Deploy Key(Private) with write access to repo
+    default: ""
 runs:
   using: "docker"
   image: "src/Dockerfile"
