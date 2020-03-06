@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: sync labels
-      uses: shitiomatic/labels@master
+      uses: tprasadtp/labels@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
