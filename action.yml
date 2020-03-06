@@ -32,7 +32,7 @@ inputs:
     description: Deploy Key with write permiss
 runs:
   using: "docker"
-  image: "docker://shitiomatic/forkbacon:latest"
+  image: "src/Dockerfile"
   args:
     - '--method'
     - ${{ inputs.method }}
