@@ -1,6 +1,6 @@
 # Set the shell
 SHELL := /bin/bash
-NAME := fork-bacon
+NAME := forkbacon
 
 # Base of operations
 ROOT_DIR := $(strip $(patsubst %/, %, $(dir $(realpath $(firstword $(MAKEFILE_LIST))))))
