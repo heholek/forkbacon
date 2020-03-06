@@ -8,7 +8,7 @@ IMAGE_DESC := "GitHub Action to keep minimally modified forks in sync"
 IMAGE_URL := "https://hub.docker.com/r/shitiomatic/forkbacon"
 IMAGE_SOURCE := "https://github.com/shitiomatic/forkbacon"
 IMAGE_LICENSES := "MIT"
-IMAGE_DOCUMENTATION_URL := "https://github.com/shitiomatic/forkbacon
+IMAGE_DOCUMENTATION_URL := "https://github.com/shitiomatic/forkbacon"
 
 include base.mk
 

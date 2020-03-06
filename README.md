@@ -1,4 +1,4 @@
-# Fork Bacon
+# ForkBacon
 
 [![build](https://github.com/shitiomatic/forkbacon/workflows/build/badge.svg?branch=master)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Abuild)
 [![lables](https://github.com/shitiomatic/forkbacon/workflows/lables/badge.svg)](https://github.com/shitiomatic/forkbacon/actions?query=workflow%3Alabels)

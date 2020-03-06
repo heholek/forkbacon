@@ -1,4 +1,4 @@
-name: "Fork Bacon"
+name: "ForkBacon"
 description: "Keeps forks updated automatically with their upstream counter part"
 branding:
   icon: "bolt"
